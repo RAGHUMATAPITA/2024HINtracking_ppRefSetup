@@ -1,0 +1,191 @@
+DEBUG 2025-02-05 15:35:36.007 UTC: 	 CRAB Client version: v3.241125
+DEBUG 2025-02-05 15:35:36.007 UTC: 	 Running on: Linux lxplus806.cern.ch 4.18.0-553.30.1.el8_10.x86_64 #1 SMP Fri Nov 15 03:46:25 EST 2024 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2025-02-05 15:35:36.007 UTC: 	 Not using Singularity
+DEBUG 2025-02-05 15:35:36.007 UTC: 	 Operating System: Red Hat Enterprise Linux 8.10 (Ootpa)
+DEBUG 2025-02-05 15:35:36.007 UTC: 	 Executing command: 'submit'
+DEBUG 2025-02-05 15:35:36.008 UTC: 	 Found CRAB cache file /afs/cern.ch/user/r/rpradhan/.crab3
+INFO 2025-02-05 15:35:36.008 UTC: 	 Will use CRAB configuration file crab_config_pp.py
+DEBUG 2025-02-05 15:35:36.008 UTC: 	 Loading CRAB configuration file.
+DEBUG 2025-02-05 15:35:36.012 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+DEBUG 2025-02-05 15:35:36.018 UTC: 	 Checking credentials
+DEBUG 2025-02-05 15:35:36.018 UTC: 	 Found proxy file /tmp/x509up_u119946
+DEBUG 2025-02-05 15:35:36.018 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2025-02-05 15:35:36.018 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u119946
+DEBUG 2025-02-05 15:35:36.456 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-05 15:35:36.457 UTC: 	 Getting proxy life time left
+DEBUG 2025-02-05 15:35:36.457 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u119946
+DEBUG 2025-02-05 15:35:36.851 UTC: 	 output : 689246
+689246
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-05 15:35:36.851 UTC: 	 Proxy valid for 191:27:26 hours
+DEBUG 2025-02-05 15:35:36.851 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2025-02-05 15:35:36.885 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+DEBUG 2025-02-05 15:35:36.886 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u119946
+DEBUG 2025-02-05 15:35:37.278 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-05 15:35:37.279 UTC: 	 Getting myproxy life time left for aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2025-02-05 15:35:37.279 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2025-02-05 15:35:37.558 UTC: 	 output : username: aedebe478e169b108aa6ac09e06ba386bd2a2409
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(01|02).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-dev-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  timeleft: 719:40:15  (30.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2025-02-05 15:35:37.558 UTC: 	 Myproxy is valid: 2590800
+DEBUG 2025-02-05 15:35:37.558 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: aedebe478e169b108aa6ac09e06ba386bd2a2409  - validity: 29 days, 23:40:00
+DEBUG 2025-02-05 15:35:37.558 UTC: 	 Command use: submit
+DEBUG 2025-02-05 15:35:37.558 UTC: 	 Options use: ['-c', 'crab_config_pp.py']
+DEBUG 2025-02-05 15:35:37.558 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2025-02-05 15:35:37.591 UTC: 	 CRABClient version: v3.241125
+DEBUG 2025-02-05 15:35:37.592 UTC: 	 Instance is prod
+DEBUG 2025-02-05 15:35:37.592 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2025-02-05 15:35:37.592 UTC: 	 Command api workflow
+DEBUG 2025-02-05 15:35:37.592 UTC: 	 Started submission
+DEBUG 2025-02-05 15:35:37.592 UTC: 	 Working on /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso
+DEBUG 2025-02-05 15:35:37.592 UTC: 	 Encoded data for curl request: subresource=backendurls
+DEBUG 2025-02-05 15:35:37.653 UTC: 	 Loading required information from the environment
+DEBUG 2025-02-05 15:35:37.654 UTC: 	 Found CMSSW_14_1_0 for el8_amd64_gcc12 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0
+DEBUG 2025-02-05 15:35:37.654 UTC: 	 Loading required information from the environment
+DEBUG 2025-02-05 15:35:37.654 UTC: 	 Found CMSSW_14_1_0 for el8_amd64_gcc12 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0
+DEBUG 2025-02-05 15:35:37.654 UTC: 	 UNIQUE NAME: tarUUID 84b61095-d26d-4c73-aaa0-7d031397a609 
+DEBUG 2025-02-05 15:35:37.654 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.requestName = 'Pythia_LowPU_NoTrigger_5p36TeV_NoptReso'
+config.General.transferLogs = False
+config.General.transferOutputs = True
+config.General.workArea = 'ppref_Efficiecny'
+config.section_('JobType')
+config.JobType.psetName = 'run_PPRef_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.outputDatasetTag = 'Pythia_LowPU_NoTrigger_5p36TeV_NoptReso'
+config.Data.unitsPerJob = 10
+config.Data.inputDBS = 'phys03'
+config.Data.inputDataset = '/Pythia8_LowPU_0p5MEvents_TuneCP5_5360GeV/rpradhan-PrivatePythia8_LowPU_0p5MEvents_RecoDebug-7d0fd9a913ab722b2353469d41166019/USER'
+config.Data.splitting = 'FileBased'
+config.Data.outLFNDirBase = '/store/group/phys_heavyions/rpradhan/Tracking_ppref_5p36TeV'
+config.Data.totalUnits = -1
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+
+DEBUG 2025-02-05 15:35:37.654 UTC: 	 self.config.JobType.psetName: run_PPRef_cfg.py
+INFO 2025-02-05 15:35:37.654 UTC: 	 Importing CMSSW configuration run_PPRef_cfg.py
+INFO 2025-02-05 15:35:38.031 UTC: 	 Finished importing CMSSW configuration run_PPRef_cfg.py
+DEBUG 2025-02-05 15:35:38.032 UTC: 	 Writing CMSSW configuration to /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/PSet.py
+DEBUG 2025-02-05 15:35:38.059 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2025-02-05 15:35:38.059 UTC: 	 The following TFile output files will be collected: ['LowPU_Pythia_5p36TeV.root']
+DEBUG 2025-02-05 15:35:38.059 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2025-02-05 15:35:38.059 UTC: 	 Loading required information from the environment
+DEBUG 2025-02-05 15:35:38.059 UTC: 	 Found CMSSW_14_1_0 for el8_amd64_gcc12 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0
+DEBUG 2025-02-05 15:35:38.059 UTC: 	 Making tarball in /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/84b61095-d26d-4c73-aaa0-7d031397a609default.tgz
+DEBUG 2025-02-05 15:35:38.060 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/bin
+DEBUG 2025-02-05 15:35:38.060 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/bin to tarball
+DEBUG 2025-02-05 15:35:38.062 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/python
+DEBUG 2025-02-05 15:35:38.062 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/python to tarball
+DEBUG 2025-02-05 15:35:38.071 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/cfipython
+DEBUG 2025-02-05 15:35:38.071 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/cfipython to tarball
+DEBUG 2025-02-05 15:35:38.091 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/lib
+DEBUG 2025-02-05 15:35:38.091 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/lib to tarball
+DEBUG 2025-02-05 15:35:38.290 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/biglib
+DEBUG 2025-02-05 15:35:38.290 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/biglib to tarball
+DEBUG 2025-02-05 15:35:38.291 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/module
+DEBUG 2025-02-05 15:35:38.291 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/config/SCRAM/hooks
+DEBUG 2025-02-05 15:35:38.291 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/config/SCRAM/hooks to tarball
+DEBUG 2025-02-05 15:35:38.294 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/Configuration/data to tarball
+DEBUG 2025-02-05 15:35:38.295 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/Configuration/python to tarball
+DEBUG 2025-02-05 15:35:38.299 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/EGMAnalysis/data to tarball
+DEBUG 2025-02-05 15:35:38.300 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/EGMAnalysis/interface to tarball
+DEBUG 2025-02-05 15:35:38.301 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/EGMAnalysis/python to tarball
+DEBUG 2025-02-05 15:35:38.302 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/EventAnalysis/python to tarball
+DEBUG 2025-02-05 15:35:38.308 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/JetAnalysis/interface to tarball
+DEBUG 2025-02-05 15:35:38.308 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/JetAnalysis/python to tarball
+DEBUG 2025-02-05 15:35:38.313 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/MuonAnalysis/interface to tarball
+DEBUG 2025-02-05 15:35:38.314 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/MuonAnalysis/python to tarball
+DEBUG 2025-02-05 15:35:38.315 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HeavyIonsAnalysis/ZDCAnalysis/python to tarball
+DEBUG 2025-02-05 15:35:38.318 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/AnalyzerCode/interface to tarball
+DEBUG 2025-02-05 15:35:38.318 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/AnalyzerCode/python to tarball
+DEBUG 2025-02-05 15:35:38.320 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/interface to tarball
+DEBUG 2025-02-05 15:35:38.321 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/python to tarball
+DEBUG 2025-02-05 15:35:38.438 UTC: 	 Uploading archive /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/84b61095-d26d-4c73-aaa0-7d031397a609default.tgz (1.039062.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2025-02-05 15:35:38.691 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=cda47445e5a694a0c357e89fc54831d9dd9a93c641ad0f09818f8ef1768478fd.tar.gz
+DEBUG 2025-02-05 15:35:38.839 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=rpradhan/sandboxes/cda47445e5a694a0c357e89fc54831d9dd9a93c641ad0f09818f8ef1768478fd.tar.gz" -F "AWSAccessKeyId=715203df6482458ba839e73e6dab634b" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjUtMDItMDVUMTY6MzU6MzhaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAicnByYWRoYW4vc2FuZGJveGVzL2NkYTQ3NDQ1ZTVhNjk0YTBjMzU3ZTg5ZmM1NDgzMWQ5ZGQ5YTkzYzY0MWFkMGYwOTgxOGY4ZWYxNzY4NDc4ZmQudGFyLmd6In1dfQ==" -F "signature=A8/y+8aG0ZCW2dWL+Z/42xG2HkY=" -F "file=@/afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/84b61095-d26d-4c73-aaa0-7d031397a609default.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2025-02-05 15:35:39.936 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2025-02-05 15:35:39.936 UTC: 	 upload to S3 of sandbox /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/84b61095-d26d-4c73-aaa0-7d031397a609default.tgz completed
+DEBUG 2025-02-05 15:35:39.936 UTC: 	 make sure that object is ready for retrieve
+DEBUG 2025-02-05 15:35:40.937 UTC: 	 Encoded data for curl request: subresource=download&objecttype=sandbox&tarballname=cda47445e5a694a0c357e89fc54831d9dd9a93c641ad0f09818f8ef1768478fd.tar.gz&clientmethod=head_object
+DEBUG 2025-02-05 15:35:40.976 UTC: 	 PreSignedUrl to download sandbox received OK
+DEBUG 2025-02-05 15:35:40.979 UTC: 	 Will execute:
+ curl -v -s -f -o /dev/null --head  "https://s3.cern.ch/crabcache_prod/rpradhan/sandboxes/cda47445e5a694a0c357e89fc54831d9dd9a93c641ad0f09818f8ef1768478fd.tar.gz?AWSAccessKeyId=715203df6482458ba839e73e6dab634b&Signature=rrBasWeKgKS1EMmP5jPLAS0As6I%3D&Expires=1738773340"
+DEBUG 2025-02-05 15:35:41.000 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2025-02-05 15:35:41.000 UTC: 	 sandbox /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/84b61095-d26d-4c73-aaa0-7d031397a609default.tgz successfully uploaded to S3
+DEBUG 2025-02-05 15:35:41.000 UTC: 	 Loading required information from the environment
+DEBUG 2025-02-05 15:35:41.000 UTC: 	 Found CMSSW_14_1_0 for el8_amd64_gcc12 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0
+DEBUG 2025-02-05 15:35:41.001 UTC: 	 Making tarball in /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/debugFiles.tgz
+DEBUG 2025-02-05 15:35:41.005 UTC: 	 Uploading archive /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/debugFiles.tgz (3 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2025-02-05 15:35:41.006 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=d772d41fab43c0625c7d6e355049eb02f6559acda627c07c242bb73bcc004adb.tar.gz
+DEBUG 2025-02-05 15:35:41.141 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=rpradhan/sandboxes/d772d41fab43c0625c7d6e355049eb02f6559acda627c07c242bb73bcc004adb.tar.gz" -F "AWSAccessKeyId=715203df6482458ba839e73e6dab634b" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjUtMDItMDVUMTY6MzU6NDFaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAicnByYWRoYW4vc2FuZGJveGVzL2Q3NzJkNDFmYWI0M2MwNjI1YzdkNmUzNTUwNDllYjAyZjY1NTlhY2RhNjI3YzA3YzI0MmJiNzNiY2MwMDRhZGIudGFyLmd6In1dfQ==" -F "signature=7AHMnBgNlOZunBH3zDVTu/bArTo=" -F "file=@/afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/debugFiles.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2025-02-05 15:35:41.214 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2025-02-05 15:35:41.214 UTC: 	 upload to S3 of sandbox /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/debugFiles.tgz completed
+DEBUG 2025-02-05 15:35:41.214 UTC: 	 make sure that object is ready for retrieve
+DEBUG 2025-02-05 15:35:42.215 UTC: 	 Encoded data for curl request: subresource=download&objecttype=sandbox&tarballname=d772d41fab43c0625c7d6e355049eb02f6559acda627c07c242bb73bcc004adb.tar.gz&clientmethod=head_object
+DEBUG 2025-02-05 15:35:42.256 UTC: 	 PreSignedUrl to download sandbox received OK
+DEBUG 2025-02-05 15:35:42.257 UTC: 	 Will execute:
+ curl -v -s -f -o /dev/null --head  "https://s3.cern.ch/crabcache_prod/rpradhan/sandboxes/d772d41fab43c0625c7d6e355049eb02f6559acda627c07c242bb73bcc004adb.tar.gz?AWSAccessKeyId=715203df6482458ba839e73e6dab634b&Signature=TK89BDK%2FG6YLVa%2BNR%2BqwLZQfo0M%3D&Expires=1738773342"
+DEBUG 2025-02-05 15:35:42.280 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2025-02-05 15:35:42.280 UTC: 	 sandbox /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/inputs/debugFiles.tgz successfully uploaded to S3
+DEBUG 2025-02-05 15:35:42.280 UTC: 	 Result uploading input files: cda47445e5a694a0c357e89fc54831d9dd9a93c641ad0f09818f8ef1768478fd.tar.gz 
+WARNING 2025-02-05 15:35:42.281 UTC: 	 Warning: The following output files will not be published, as they are not EDM files: ['LowPU_Pythia_5p36TeV.root']
+DEBUG 2025-02-05 15:35:42.281 UTC: 	 submit() - self.configuration from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.requestName = 'Pythia_LowPU_NoTrigger_5p36TeV_NoptReso'
+config.General.transferLogs = False
+config.General.transferOutputs = True
+config.General.workArea = 'ppref_Efficiecny'
+config.section_('JobType')
+config.JobType.psetName = 'run_PPRef_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.outputDatasetTag = 'Pythia_LowPU_NoTrigger_5p36TeV_NoptReso'
+config.Data.unitsPerJob = 10
+config.Data.inputDBS = 'phys03'
+config.Data.inputDataset = '/Pythia8_LowPU_0p5MEvents_TuneCP5_5360GeV/rpradhan-PrivatePythia8_LowPU_0p5MEvents_RecoDebug-7d0fd9a913ab722b2353469d41166019/USER'
+config.Data.splitting = 'FileBased'
+config.Data.outLFNDirBase = '/store/group/phys_heavyions/rpradhan/Tracking_ppref_5p36TeV'
+config.Data.totalUnits = -1
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+
+DEBUG 2025-02-05 15:35:42.281 UTC: 	 submit() - self.configreq {'dryrun': 0, 'workflow': 'crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso', 'saveoutput': 1, 'savelogsflag': 0, 'inputdata': '/Pythia8_LowPU_0p5MEvents_TuneCP5_5360GeV/rpradhan-PrivatePythia8_LowPU_0p5MEvents_RecoDebug-7d0fd9a913ab722b2353469d41166019/USER', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'FileBased', 'algoargs': 10, 'totalunits': -1, 'lfn': '/store/group/phys_heavyions/rpradhan/Tracking_ppref_5p36TeV', 'publication': 1, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'publishname2': 'Pythia_LowPU_NoTrigger_5p36TeV_NoptReso', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 1, 'maxmemory': 2000, 'priority': 10, 'nonprodsw': 0, 'asyncdest': 'T2_CH_CERN', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 0, 'partialdataset': 0, 'inputblocks': []}
+DEBUG 2025-02-05 15:35:42.281 UTC: 	 submit() - jobconfig {'addoutputfiles': [], 'tfileoutfiles': ['LowPU_Pythia_5p36TeV.root'], 'edmoutfiles': [], 'jobarch': 'el8_amd64_gcc12', 'jobsw': 'CMSSW_14_1_0', 'inputdata': '/Pythia8_LowPU_0p5MEvents_TuneCP5_5360GeV/rpradhan-PrivatePythia8_LowPU_0p5MEvents_RecoDebug-7d0fd9a913ab722b2353469d41166019/USER', 'cacheurl': 'https://cmsweb.cern.ch/S3/crabcache_prod', 'cachefilename': 'cda47445e5a694a0c357e89fc54831d9dd9a93c641ad0f09818f8ef1768478fd.tar.gz', 'debugfilename': 'd772d41fab43c0625c7d6e355049eb02f6559acda627c07c242bb73bcc004adb.tar.gz', 'jobtype': 'Analysis'}
+INFO 2025-02-05 15:35:42.281 UTC: 	 Sending the request to the server at cmsweb.cern.ch
+DEBUG 2025-02-05 15:35:42.281 UTC: 	 Submitting {'dryrun': 0, 'workflow': 'crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso', 'saveoutput': 1, 'savelogsflag': 0, 'inputdata': '/Pythia8_LowPU_0p5MEvents_TuneCP5_5360GeV/rpradhan-PrivatePythia8_LowPU_0p5MEvents_RecoDebug-7d0fd9a913ab722b2353469d41166019/USER', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'FileBased', 'algoargs': 10, 'totalunits': -1, 'lfn': '/store/group/phys_heavyions/rpradhan/Tracking_ppref_5p36TeV', 'publication': 1, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'publishname2': 'Pythia_LowPU_NoTrigger_5p36TeV_NoptReso', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 1, 'maxmemory': 2000, 'priority': 10, 'nonprodsw': 0, 'asyncdest': 'T2_CH_CERN', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 0, 'partialdataset': 0, 'inputblocks': [], 'tfileoutfiles': ['LowPU_Pythia_5p36TeV.root'], 'edmoutfiles': [], 'jobarch': 'el8_amd64_gcc12', 'jobsw': 'CMSSW_14_1_0', 'cacheurl': 'https://cmsweb.cern.ch/S3/crabcache_prod', 'cachefilename': 'cda47445e5a694a0c357e89fc54831d9dd9a93c641ad0f09818f8ef1768478fd.tar.gz', 'debugfilename': 'd772d41fab43c0625c7d6e355049eb02f6559acda627c07c242bb73bcc004adb.tar.gz'} 
+DEBUG 2025-02-05 15:35:42.281 UTC: 	 Encoded data for curl request: dryrun=0&workflow=crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso&saveoutput=1&savelogsflag=0&inputdata=%2FPythia8_LowPU_0p5MEvents_TuneCP5_5360GeV%2Frpradhan-PrivatePythia8_LowPU_0p5MEvents_RecoDebug-7d0fd9a913ab722b2353469d41166019%2FUSER&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSReader&useparent=0&ignorelocality=0&splitalgo=FileBased&algoargs=10&totalunits=-1&lfn=%2Fstore%2Fgroup%2Fphys_heavyions%2Frpradhan%2FTracking_ppref_5p36TeV&publication=1&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&publishname2=Pythia_LowPU_NoTrigger_5p36TeV_NoptReso&jobtype=Analysis&generator=pythia&maxjobruntime=1250&numcores=1&maxmemory=2000&priority=10&nonprodsw=0&asyncdest=T2_CH_CERN&requireaccelerator=0&oneEventMode=0&ignoreglobalblacklist=0&partialdataset=0&jobarch=el8_amd64_gcc12&jobsw=CMSSW_14_1_0&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2FS3%2Fcrabcache_prod&cachefilename=cda47445e5a694a0c357e89fc54831d9dd9a93c641ad0f09818f8ef1768478fd.tar.gz&debugfilename=d772d41fab43c0625c7d6e355049eb02f6559acda627c07c242bb73bcc004adb.tar.gz&tfileoutfiles=LowPU_Pythia_5p36TeV.root
+DEBUG 2025-02-05 15:35:43.094 UTC: 	 Result: {'result': [{'RequestName': '250205_153542:rpradhan_crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso'}]}
+INFO 2025-02-05 15:35:43.096 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2025-02-05 15:35:43.096 UTC: 	 Task name: 250205_153542:rpradhan_crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso
+INFO 2025-02-05 15:35:43.096 UTC: 	 Project dir: ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso
+INFO 2025-02-05 15:35:43.096 UTC: 	 Please use ' crab status -d ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso ' to check how the submission process proceeds.
+DEBUG 2025-02-05 15:35:43.096 UTC: 	 About to return
+INFO 2025-02-05 15:35:43.098 UTC: 	 Log file is /afs/cern.ch/work/r/rpradhan/Tracking_Studies/for_OO_Run/for_pp_Pythia_Eff/CMSSW_14_1_0/src/HITrackingStudies/HITrackingStudies/test/ppref_Efficiecny/crab_Pythia_LowPU_NoTrigger_5p36TeV_NoptReso/crab.log
